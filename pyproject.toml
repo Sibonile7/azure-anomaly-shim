@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azure-anomaly-shim"
+version = "0.1.0"
+description = "A drop in replacement for the retired Azure Anomaly Detector service, powered by PyOD."
+readme = "README.md"
+authors = [
+    { name = "Sibonile Mthunzi", email = "bonniemthunzi@gmail.com" }
+]
+license = { text = "MIT" }
+keywords = ["anomaly detection", "azure", "migration", "time series", "pyod"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "pyod>=1.1.0",
+    "numpy>=1.21.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Sibonile7/azure-anomaly-shim"
+Repository = "https://github.com/Sibonile7/azure-anomaly-shim"
+Issues = "https://github.com/Sibonile7/azure-anomaly-shim/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["azure_anomaly_shim*"]
