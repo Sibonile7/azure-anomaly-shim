@@ -60,7 +60,7 @@ for i, is_anomaly in enumerate(result["is_anomaly"]):
         print(f"Position {i}: value = {data[i]}, severity = {result['severity'][i]:.2f}")
 ```
 
-Output:
+Output: Position 8: value = 50, severity = 1.00
 ## What is not supported yet
 
 Multivariate detection. The old SDK had `train_multivariate_model` and `detect_multivariate_batch_anomaly` for analyzing multiple correlated signals at once. These are planned for a future release.
